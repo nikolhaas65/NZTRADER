@@ -1,0 +1,38 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package AlgoTrader;
+
+import Utils.FileManager;
+import IBLink.*;
+
+/**
+ *
+ * @author nik
+ */
+public class Dispatcher {
+
+  public static final boolean mRTFeed = true;
+
+  static Dispatcher mDisp = Dispatcher.getDispatcher();
+  public static Dispatcher getDispatcher() {
+    if(mDisp==null) {
+      mDisp = new Dispatcher();
+    }
+    return mDisp;
+  }
+
+  public static final TraderGUI mGUI = TraderGUI.getTraderGUI();
+  public static final IBLink mIB = IBLink.getIBLink();
+  public static final FileManager mFM = FileManager.getFileManager();
+
+  public static String ticktag_demo =
+          "100,101,104,105,106,107,165,225,232,221,233,236,258";
+
+  public static void main(String args[]) {
+
+  }
+
+}

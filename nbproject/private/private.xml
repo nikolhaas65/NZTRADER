@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/dev/IBTesting/src/Indicators/CF_Filter.java</file>
+            <file>file:/E:/dev/IBTesting/src/Strategies/MacroStrategy.java</file>
+            <file>file:/E:/dev/IBTesting/src/Indicators/VOLLOGMA.java</file>
+            <file>file:/E:/dev/IBTesting/src/OrderManager/OrderManager.java</file>
+            <file>file:/E:/dev/IBTesting/src/InstrumentManager/FinSecurity.java</file>
+            <file>file:/E:/dev/IBTesting/src/Indicators/SARIndicator.java</file>
+            <file>file:/E:/dev/IBTesting/src/OrderExecutor/MicroStrategy.java</file>
+            <file>file:/E:/dev/IBTesting/src/Strategies/StrategyManager.java</file>
+            <file>file:/E:/dev/IBTesting/src/IBLink/IBLink.java</file>
+        </group>
+    </open-files>
+</project-private>

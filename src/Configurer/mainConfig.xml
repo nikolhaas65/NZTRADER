@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument.xml
+    Created on : April 29, 2010, 8:47 PM
+    Author     : nik
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+<ibt_config_dir>Е:\dev\IBTesting\ibt_config</ibt_config_dir>
+<tick_data_dir>Е:\data\TickData</tick_data_dir>
+<!--tick_data_dir>Е:\data\TickDataTest</tick_data_dir-->
+<bar_data_dir>Е:\data\BarData</bar_data_dir>
+<strategy name="Futures Volume Dynamics">
+  <strat_param>
+    <param_name>Oscillator threshold</param_name>
+    <param_type>double</param_type>
+    <param_value>0.06</param_value>
+  </strat_param>
+  <strat_param>
+    <param_name>Probability Down Trend</param_name>
+    <param_type>double</param_type>
+    <param_value>-0.3</param_value>
+  </strat_param>
+  <strat_param>
+    <param_name>Probability Up Trend</param_name>
+    <param_type>double</param_type>
+    <param_value>0.35</param_value>
+  </strat_param>
+  <strat_param>
+    <param_name>Probability Volume</param_name>
+    <param_type>double</param_type>
+    <param_value>0.05</param_value>
+  </strat_param>
+  <strat_param>
+    <param_name>Stop Level</param_name>
+    <param_type>double</param_type>
+    <param_value>180.0</param_value>
+  </strat_param>
+  <strat_param>
+    <param_name>Cont Flag</param_name>
+    <param_type>integer</param_type>
+    <param_value>0</param_value>
+  </strat_param>
+</strategy>
+
+<!--
+  Definitions of securities
+-->
+<secfin>
+  <name>FX EURUSD</name>
+  <type>CASH</type>
+  <symb>EUR</symb>
+  <currency>USD</currency>
+  <exchange>IDEALPRO</exchange>
+  <tick>0.00005</tick>
+  <feed>IBFeed</feed>
+  <limit>10000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<secfin>
+  <name>FX EURUSD BID</name>
+  <type>CASH</type>
+  <symb>EUR</symb>
+  <currency>USD</currency>
+  <exchange>IDEALPRO</exchange>
+  <tick>0.00005</tick>
+  <feed>IBFeed</feed>
+  <limit>10000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<secfin>
+  <name>FX EURGBP</name>
+  <type>CASH</type>
+  <symb>EUR</symb>
+  <currency>GBP</currency>
+  <exchange>IDEALPRO</exchange>
+  <tick>0.00005</tick>
+  <feed>IBFeed</feed>
+  <limit>10000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<secfin>
+  <name>FX GBPUSD</name>
+  <type>CASH</type>
+  <symb>GBP</symb>
+  <currency>USD</currency>
+  <exchange>IDEALPRO</exchange>
+  <tick>0.00005</tick>
+  <feed>IBFeed</feed>
+  <limit>10000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<!--secfin>
+  <name>FX GBPUSD BID</name>
+  <type>CASH</type>
+  <symb>GBP</symb>
+  <currency>USD</currency>
+  <exchange>IDEALPRO</exchange>
+  <tick>0.00005</tick>
+  <feed>IBFeed</feed>
+  <limit>10000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin-->
+<!--<secfin>
+  <name>FUT AEX MAY12</name>
+  <type>FUT</type>
+  <symb>EOE</symb>
+  <currency>EUR</currency>
+  <exchange>FTA</exchange>
+  <expiry>20120518</expiry>
+  <tick>0.05</tick>
+  <feed>IBFeed</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>200</mult>
+</secfin>-->
+<!--<secfin>
+  <name>FUT AEX JUN12</name>
+  <type>FUT</type>
+  <symb>EOE</symb>
+  <currency>EUR</currency>
+  <exchange>FTA</exchange>
+  <expiry>20120615</expiry>
+  <tick>0.05</tick>
+  <feed>IBFeed</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>200</mult>
+</secfin>-->
+<!--<secfin>
+  <name>FUT AEX JUL12</name>
+  <type>FUT</type>
+  <symb>EOE</symb>
+  <currency>EUR</currency>
+  <exchange>FTA</exchange>
+  <expiry>20120720</expiry>
+  <tick>0.05</tick>
+  <feed>IBFeed</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>200</mult>
+</secfin>-->
+
+<!--secfin>
+  <name>FUT CL OCT10</name>
+  <type>FUT</type>
+  <symb>CL</symb>
+  <currency>USD</currency>
+  <exchange>NYMEX</exchange>
+  <expiry>20100921</expiry>
+  <tick>0.01</tick>
+  <feed>IBFeed</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin-->
+<!--secfin>
+  <name>BMW</name>
+  <type>STK</type>
+  <symb>BMW</symb>
+  <currency>EUR</currency>
+  <exchange>SMART</exchange>
+  <tick>0.01</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin-->
+<!--secfin>
+  <name>APPLE CO</name>
+  <type>STK</type>
+  <symb>AAPL</symb>
+  <currency>USD</currency>
+  <exchange>SMART</exchange>
+  <tick>0.01</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin-->
+<secfin>
+  <name>STK A Royal Dutch Shell</name>
+  <type>STK</type>
+  <symb>RDSA</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.005</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<!--secfin>
+  <name>STK B Royal Dutch Shell</name>
+  <type>STK</type>
+  <symb>RDSB</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.005</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin-->
+<secfin>
+  <name>STK ING</name>
+  <type>STK</type>
+  <symb>ING</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<!--<secfin>
+  <name>STK MITTAL</name>
+  <type>STK</type>
+  <symb>MT</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK PHILIPS</name>
+  <type>STK</type>
+  <symb>PHI</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK KPN</name>
+  <type>STK</type>
+  <symb>KPN</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK CORIO</name>
+  <type>STK</type>
+  <symb>COR</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK AKZO</name>
+  <type>STK</type>
+  <symb>AKZ</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK UNILEVER</name>
+  <type>STK</type>
+  <symb>UN</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>STK AHOLD</name>
+  <type>STK</type>
+  <symb>AH</symb>
+  <currency>EUR</currency>
+  <exchange>AEB</exchange>
+  <tick>0.001</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>-->
+<!--<secfin>
+  <name>CHAIN OPT AEX MAY12</name>
+  <type>OPT</type>
+  <symb>EOE</symb>
+  <strikes>220,230,240,250,255,260,265,270,275,280,285,290,295,300,305,310,315,320,325,330,335,340,345,350,355,360,370,380</strikes>
+  <currency>EUR</currency>
+  <exchange>FTA</exchange>
+  <expiry>20120518</expiry>
+  <tick>0.05</tick>
+  <feed>IBFeed</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>100</mult>
+</secfin>-->
+<!--secfin>
+  <name>FUT AEX (FD)</name>
+  <type>FUT</type>
+  <symb>TickData\FUT AEX OCT10_21092010</symb>
+  <currency>EUR</currency>
+  <exchange>FTA</exchange>
+  <expiry>20100917</expiry>
+  <tick>0.05</tick>
+  <feed>FeedReader</feed>
+  <limit>10</limit>
+  <interval>5 min</interval>
+  <mult>200</mult>
+</secfin-->
+
+<!--<arbitrage name="AEX_BA">
+  <name>FUT AEX MAY12 ASK</name>
+  <name>FUT AEX MAY12 BID</name>
+</arbitrage>-->
+<arbitrage name="AEX_NOV">
+  <name>STK A Royal Dutch Shell ASK</name>
+  <name>STK A Royal Dutch Shell BID</name>
+</arbitrage>
+<arbitrage name="EURUSD">
+  <name>FX EURUSD ASK</name>
+  <name>FX EURUSD BID</name>
+</arbitrage>
+<!--<arbitrage name="FUTOPT">
+  <name>FUT AEX MAY12</name>
+  <name>STK MITTAL</name>
+  <name>STK PHILIPS</name>
+  <name>STK KPN</name>
+  <name>STK CORIO</name>
+  <name>STK UNILEVER</name>
+  <name>STK ING</name>
+  <name>STK A Royal Dutch Shell</name>
+  <name>STK AHOLD</name>
+  <name>STK AKZO</name>
+  <name>OPT AEX MAY12</name>
+</arbitrage>-->
+
+</root>
