@@ -9,6 +9,8 @@ As a consequence, the 'JOrder' is a close copy of 'order' from IB.
 
 Project files are setup for NetBeans.
 
+Central Main() is in IBLink.java
+
 Things to do (for those who wants to continue development of it):
 - Framework perhaps can run on your computer (see Config xml files to change directories)
 - Ensure it runs with current TWS/IB (might require change of IB wrapper)
