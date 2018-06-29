@@ -30,6 +30,10 @@ Installation:
 Run NZTRADER:
 - Within TWS Settings -> API/Settings "Enable ActiveX and Socket Clients"
 - within Configurer/mainConfig.xml make sure that wanted security is listed. Examples are given.
+  * set directory for output of tickdata: <tick_data_dir>
+- if you want to run FutDirect_Opt strategy make sure to change directory to yours:
+  String out_dir = "E:\\DATA\\IBOUTPUT";
+  it is used to dump intermediate calculations of the strategy to backtest numbers. If you dont need it, comment it out.
 - run AlgoTrader/Dispatcher.java 
 - click 'IB connect' (low/left corner). next to it the red box will flash green if connection is established
   * in the Output window you must see something like "1 2104 Market data farm connection is OK:usfuture"
@@ -37,4 +41,4 @@ Run NZTRADER:
   * Same for Strategy (make sure you select right strategy within IBLink.main)
 - some example strategies are provided.
   
-  
+
