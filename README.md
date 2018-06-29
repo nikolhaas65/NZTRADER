@@ -18,3 +18,12 @@ Things to do (for those who wants to continue development of it):
 Some description and respective presentation is here:
 
 http://www.innovaest.org/consulting/white-papers/tradeautomationplatformmadeinjava
+
+Installation:
+- project is under NetBeans. Eclipse can run as well
+- install TWS
+- install TWS API (https://interactivebrokers.github.io/#)
+  * goto "TSW API\samples\Java" directory and copy those samples into new project.
+  * when it asks to add Jar files, add from "TWS API\source\JavaClient" two jar-files: TwsApi.jar and TwsApi_debug.jar
+  * this sample is useful to test your connection/problems. ApiDemo.java when you are not sure if any of your java apps is linking to TWS
+- 
