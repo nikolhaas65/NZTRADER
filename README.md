@@ -25,7 +25,7 @@ Installation:
 - install TWS API (https://interactivebrokers.github.io/#)
   * goto "TSW API\samples\Java" directory and copy those samples into new project.
   * when it asks to add Jar files, add from "TWS API\source\JavaClient" two jar-files: TwsApi.jar and TwsApi_debug.jar
-  * this sample is useful to test your connection/problems. ApiDemo.java when you are not sure if any of your java apps is linking to TWS
+  * this sample is useful to test your connection/problems. Run ApiDemo.java when you are not sure if any of your java apps is linking to TWS
 
 Run NZTRADER:
 - Within TWS Settings -> API/Settings "Enable ActiveX and Socket Clients"
