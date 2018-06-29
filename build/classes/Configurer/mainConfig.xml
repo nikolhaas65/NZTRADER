@@ -211,12 +211,25 @@
   <mult>1</mult>
 </secfin-->
 <secfin>
-  <name>STK ING</name>
+  <name>STK INGA</name>
   <type>STK</type>
-  <symb>ING</symb>
+  <symb>INGA</symb>
   <currency>EUR</currency>
   <exchange>AEB</exchange>
-  <tick>0.001</tick>
+  <!--<tick>0.001</tick>-->
+  <tick>2</tick>
+  <feed>IBFeed</feed>
+  <limit>1000</limit>
+  <interval>5 min</interval>
+  <mult>1</mult>
+</secfin>
+<secfin>
+  <name>STK MSFT</name>
+  <type>STK</type>
+  <symb>MSFT</symb>
+  <currency>EUR</currency>
+  <exchange>SMART</exchange>
+  <tick>0.01</tick>
   <feed>IBFeed</feed>
   <limit>1000</limit>
   <interval>5 min</interval>
@@ -338,15 +351,16 @@
   <name>FUT AEX MAY12 ASK</name>
   <name>FUT AEX MAY12 BID</name>
 </arbitrage>-->
-<arbitrage name="AEX_NOV">
+<!--<arbitrage name="AEX_NOV">
   <name>STK A Royal Dutch Shell ASK</name>
   <name>STK A Royal Dutch Shell BID</name>
 </arbitrage>
 <arbitrage name="EURUSD">
   <name>FX EURUSD ASK</name>
   <name>FX EURUSD BID</name>
-</arbitrage>
-<!--<arbitrage name="FUTOPT">
+</arbitrage>-->
+
+<arbitrage name="FUTOPT">
   <name>FUT AEX MAY12</name>
   <name>STK MITTAL</name>
   <name>STK PHILIPS</name>
@@ -358,6 +372,6 @@
   <name>STK AHOLD</name>
   <name>STK AKZO</name>
   <name>OPT AEX MAY12</name>
-</arbitrage>-->
+</arbitrage>
 
 </root>

@@ -94,7 +94,7 @@ public class FutDirect_Opt extends MacroStrategy {
 
 //    hlog = new HistoryLogger();
     String day2read = TimeUtils.Time2String(5,System.currentTimeMillis());
-    String out_dir = "D:\\dev\\analysis\\";
+    String out_dir = "E:\\DATA\\IBOUTPUT";
     flog = FileManager.openFile2Write(out_dir + "dump_stratIB_"+day2read + ".txt");
 
     long LTime = System.currentTimeMillis();

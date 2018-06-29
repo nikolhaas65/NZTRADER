@@ -74,7 +74,9 @@ public class Dispatcher {
           "100,101,104,105,106,107,165,225,232,221,233,236,258";
 
   public static void main(String args[]) {
-
+    System.out.println("+++++++++++++++++++++++++++");
+    System.out.println("Start AlgoTrader.Dispatcher");
+    System.out.println("+++++++++++++++++++++++++++");
   }
 
 }

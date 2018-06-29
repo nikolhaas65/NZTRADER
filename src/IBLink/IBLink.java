@@ -71,7 +71,7 @@ public class IBLink extends EWrapperAdapter {
 
   public static String ticktag_demo =
           "100,101,104,105,106,107,165,221,225,232,233,236,258";
-
+//        "100,101,104,105,106,107,165,221,225,233,236,258,293,294,295,318"
   public static String ticktag = 
           "100,101,104,106,162,165,221,225,236";
 
@@ -593,6 +593,13 @@ public class IBLink extends EWrapperAdapter {
   public static void reqMktDataIB(int tickerID, Contract contract, String ttag) {
     System.out.println(tickerID + " : " + contract.secType() + " : "+ contract.symbol() + " : " + contract.currency());
     m_client.reqMktData(tickerID, contract, ttag, faError, false, m_mktDataOptions);
+    
+//    m_client.reqMktData( m_orderDlg.id(), m_orderDlg.contract(),
+//                         m_orderDlg.m_genericTicks, 
+//                         m_orderDlg.m_snapshotMktData, 
+//                         m_orderDlg.m_reqSnapshotMktData, 
+//                         m_mktDataOptions);
+
     System.out.println("MktRequested");
   }
 //  public synchronized void reqMktData(int i, Contract cntrct, String string, boolean bln, 
@@ -668,8 +675,8 @@ public class IBLink extends EWrapperAdapter {
 
     MacroStrategy runner = null;
     
-//    switchStrategy strategy_switch = switchStrategy.FUT_BARRED;
-    switchStrategy strategy_switch = switchStrategy.FUT_DIRECT_OPT;
+    switchStrategy strategy_switch = switchStrategy.FUT_BARRED;
+//    switchStrategy strategy_switch = switchStrategy.FUT_DIRECT_OPT;
     switch(strategy_switch) { 
       case TRADE_LIMIT:
         int dir=1;
